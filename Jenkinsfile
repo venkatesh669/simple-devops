@@ -9,8 +9,8 @@ pipeline {
     
         stage('Docker Build & Push') {
             steps {
-                sh 'docker build -t venkatesh86/simple-app .'
-                sh 'docker push venkatesh86/simple-app'
+                sh 'docker build -t venkatesh86/simple-devops .'
+                sh 'docker push venkatesh86/yourdockerhub:tagname'
             }
         }
         stage('Terraform Apply') {
