@@ -6,7 +6,7 @@ pipeline {
                 git 'https://github.com/venkatesh669/simple-devops.git'
             }
         }
-       
+    
         stage('Docker Build & Push') {
             steps {
                 sh 'docker build -t yourdockerhub/simple-app .'
