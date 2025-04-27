@@ -9,8 +9,8 @@ pipeline {
     
         stage('Docker Build & Push') {
             steps {
-                sh 'docker build -t yourdockerhub/simple-app .'
-                sh 'docker push yourdockerhub/simple-app'
+                sh 'docker build -t venkatesh86/simple-app .'
+                sh 'docker push venkatesh86/simple-app'
             }
         }
         stage('Terraform Apply') {
